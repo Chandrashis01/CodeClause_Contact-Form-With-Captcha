@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+        function submity()
+        {
+            alert("Form is Submitted Successfully");
+        }
+    </script>
+    <title>Contact Form</title>
+</head>
+<body>
+    <h1>Contact Form</h1>
+    <form action="">
+        <label for="name">Name:</label>
+        <input type="text" name="name" required placeholder="Enter your name"><br>
+        <label for="Email">Email:</label>
+        <input type="email" name="Email" required placeholder="Enter your Email"><br>
+        <label for="number">Contact:</label>
+        <input type="tel" name="number"><br>
+        <label for="gender">Gender:</label>
+        <select name="gender" id="gender">
+            <option value="">--Please select your gender</option>
+            <option value="Male" >Male</option>
+            <option value="Female">Female</option>
+        </select><br>
+        <label for="bday">Date of Birth:</label>
+        <input type="date" name="bday"><br>
+        <label for="radio">Rating:</label>
+        <input type="radio" name="Rating" id="1" value="1">
+        <label for="1">1</label>
+        <input type="radio" name="Rating" id="2" value="2">
+        <label for="2">2</label>
+        <input type="radio" name="Rating" id="3" value="3">
+        <label for="3">3</label>
+        <input type="radio" name="Rating" id="4" value="4">
+        <label for="4">4</label>
+        <input type="radio" name="Rating" id="5" value="5">
+        <label for="5">5</label><br>
+        <label for="textarea">Enter your Message</label><br>
+        <textarea rows="3" cols="25" name="comment" placeholder="Enter your Message"></textarea><br>
+        <div class="g-recaptcha" data-sitekey="6LfttbomAAAAADtjlcu62QH9j61B8RgD5pCi9Ts6"></div>
+        <button type="submit" value="Submit" onclick="submity()">Submit</button>
+        <button type="reset"  value="Reset">Reset</button><br><br>
+        <a href="https://www.youtube.com" target="_blank">
+            <img src="https://play-lh.googleusercontent.com/lMoItBgdPPVDJsNOVtP26EKHePkwBg-PkuY9NOrc-fumRtTFP4XhpUNk_22syN4Datc" 
+            height=35 alt="youtube">
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png" 
+            height=35 alt="instagram">
+        </a>
+        <a href="https://www.telegram.com" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/1200px-Telegram_2019_Logo.svg.png" 
+            height=35 alt="telegram">
+        </a>
+    </form>
+</body>
+</html>
